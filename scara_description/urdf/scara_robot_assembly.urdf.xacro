@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="scara_robot">
+
+    <!--Tuodaan tiedosto joka sisältää rungon-->
+    <xacro:include filename="scara_robot_body.urdf.xacro"/>
+    <xacro:include filename="scara_robot_gripper.urdf.xacro"/>
+
+    <xacro:property name="cylinder4_length" value="0.4"/>
+
+    <link name="world"/>
+    <!-- Kutsutaan tiedostossa scara_robot_body määriteltyä rungon rakennetta-->
+    <xacro:body 
+    cylinder_radius="0.1" cylinder3_radius="0.15" cylinder1_length="0.6" cylinder2_length="0.2" 
+    cylinder3_length="0.2" cylinder4_length="${cylinder4_length}" base_heigth="0.05" base_width="0.4"
+    box1_length="0.35" box2_length="0.3" box1_width="0.1" box2_width="0.1"
+    box1_heigth="0.1" box2_heigth="0.1"/>
+
+    <xacro:gripper space="0.08" box_length="0.1" box_width="0.25" box_heigth="0.1"/>
+
+
+</robot>

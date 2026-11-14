@@ -1,0 +1,5 @@
+# no input
+---
+# uses the standard interface from geometry_msgs
+bool success
+geometry_msgs/Pose position

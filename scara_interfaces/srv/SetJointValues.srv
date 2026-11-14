@@ -1,0 +1,6 @@
+# Takes the joint values as input and returns true if operation was succesful. Returns additional info
+# if failed
+float64[] joint_angles
+---
+bool success
+string info
