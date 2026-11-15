@@ -12,6 +12,8 @@
   <depend>geometry_msgs</depend>
   <depend>tf2_ros</depend>
   <depend>scara_interfaces</depend>
+  <depend>sys</depend>
+  <depend>time</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

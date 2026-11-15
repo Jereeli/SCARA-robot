@@ -24,7 +24,9 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'joint_configuration_node = scara_control.joint_configuration:main',
+            'joint_configuration = scara_control.joint_configuration:main',
+            'end_effector_pose = scara_control.end_effector_pose:main',
+            'client = scara_control.client:main',
         ],
     },
 )
